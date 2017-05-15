@@ -1,0 +1,290 @@
+.banner{
+	width: 100%;
+	height: 4.2rem;
+	background-image: url('../img/banner_02.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden
+}
+/* .bannerc{
+	width: 100%;
+	height: 4.14rem;
+	background-image: url('../img/uibanners.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-top: 0.86rem;
+	z-index: 1;
+} */
+header{
+    width: 100%;
+    height: 0.89rem;
+    background: rgba(0, 123, 227, 0.4);
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+.box2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box2 li {
+    font-size: 0.32rem;
+    border-bottom: 0.04rem;
+}
+.box2 li {
+    width: 20%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.box2 li a {
+    font-size: 0.32rem;
+}
+.box2 li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 0.28rem;
+    line-height: 1rem;
+    border: none;
+    text-align: center;
+}
+.content {
+    width: 100%;
+    padding: 0.1rem 0.24rem 0;
+    box-sizing: border-box;
+}
+.content .mulu {
+    height: 0.62rem;
+    line-height: 0.62rem;
+    width: 100%;
+}
+.content .mulu a {
+    color: #494747;
+    font-size: 0.22rem;
+    line-height: 0.7rem;
+    float: left;
+    margin: 0 0.14rem;
+    font-weight: bold;
+}
+.content .mulu span {
+    float: left;
+    width: 0.16rem;
+    height: 0.2rem;
+    margin-top: 0.26rem;
+    font-size: 0.22rem;
+    text-align: center;
+    color: #494747;
+    background-size: 100%;
+    background: url('../img/jiantou.png') center center no-repeat;
+    overflow: hidden;
+}
+.content .mulu a:nth-child(1) {
+    margin-left: 0;
+}
+.tea-content{
+	width: 100%;
+    background-color: #ffffff;
+    margin-top: 0.2rem;
+    padding: 0.1rem 0.24rem 0;
+}
+.tab{
+	width: 100%;
+    height: 0.8rem;
+    border: 1px solid #01b5ff;
+    border-radius: 0.07rem;
+    box-sizing: border-box;
+    margin-bottom: 0.2rem;
+}
+.active {
+    background-color: #01b5ff;
+    border-radius: 0.07rem;
+    color: #ffffff;
+}
+.tab_title {
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    color: #111111;
+    position: relative;
+}
+.caret {
+    position: absolute;
+    width: 0rem;
+    height: 0rem;
+    border: 0.2rem solid;
+    border-top-color: #01b5ff;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    top: 0.74rem;
+    left: 50%;
+    margin-left: -0.1rem;
+    display: none;
+}
+.tea_tiao {
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 0.2rem;
+}
+.tab_neirong ul li {
+    width: 100%;
+    height: auto;
+    padding: 0.2rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #b8b8b8;
+    overflow: hidden;
+}
+.tea_tiao a.lia_teacher {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border-radius: 0.07rem;
+    text-align: center;
+    line-height: 0;
+    font-size: 0;
+    margin-left: 0;
+}
+.tab_neirong ul li .img img {
+    width: 100%;
+    height: 100%;
+}
+.tab_neirong ul li .img {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-top: 0.15rem;
+    border-radius: 0.08rem;
+    overflow: hidden;
+    float: left;
+}
+.tab_neirong ul li .intro {
+    width: 3.6rem;
+    height: 100%;
+    float: right;
+    margin-top: 0.34rem;
+    overflow: hidden;
+}
+.tab_neirong ul li .intro .part1 {
+    width: 100%;
+    float: left;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tab_neirong ul li .intro .part1 .name {
+    font-size: 0.26rem;
+    color: #111;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tab_neirong ul li .intro .part1 .line {
+    border-bottom: 1px dashed #b8b8b8;
+    width: 3.6rem;
+    height: 0;
+    margin: 0.2rem 0;
+}
+.tab_neirong ul li .intro .part1 .position {
+    font-size: 0.24rem;
+    color: #01b5ff;
+    width: 100%;
+    height: 0.26rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 0.24rem;
+    margin-left: 0;
+}
+.tab_neirong ul li .intro p.part3 {
+    width: 3.03rem;
+    height: 0.3rem;
+    color: #666666;
+    font-size: 0.24rem;
+    float: left;
+    margin-top: 0.2rem;
+    line-height: 0.3rem;
+    text-align: left;
+    background-color: #fff;
+    margin-left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.tab_neirong ul li p.part2 {
+    float: left;
+    color: #ff9300;
+    height: 0.24rem;
+    font-size: 0.24rem;
+    margin-top: 0.3rem;
+}
+.yema {
+    width: 100%;
+    height: auto;
+}
+.tea_tiaos {
+    height: 0.8rem;
+    padding-top: 0.15rem;
+}
+.tea_tiaos a {
+    float: left;
+    padding: 0.1rem;
+    height: 0.5rem;
+    border-radius: 0.4rem;
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.3rem;
+    margin-right: 0.15rem;
+}
+.tea_tiaos a:nth-child(1) {
+    width: 0.5rem;
+    margin-left: 0.3rem;
+    background: url('../img/s1.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.tea_tiaos a:nth-child(2) {
+    width: 1.48rem;
+    background: url('../img/s2.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.tea_tiaos a.a1 {
+    border: 1px solid #666;
+    letter-spacing: 1px;
+    color: #666;
+    width: 1.4rem;
+}
+.tea_tiaos a:nth-child(4) {
+    width: 1.48rem;
+    background: url('../img/s3.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.tea_tiaos a:nth-child(5) {
+    width: 0.5rem;
+    background: url('../img/s4.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.tea_copyright {
+    width: 100%;
+    height: 1.2rem;
+    font-size: 0.3rem;
+    overflow: hidden;
+}
+.tea_copyright p {
+    color: #666;
+    font-size: 0.2rem;
+    text-align: center;
+    padding-top: 0.18rem;
+    box-sizing: border-box;
+}

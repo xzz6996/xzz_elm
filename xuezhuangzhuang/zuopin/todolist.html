@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body {
+            margin:0;height: 100%;
+            font-family: "微软雅黑";
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .title{
+            width: 100%;height: 100px;
+            background: #0ff;
+            line-height: 100px;
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+        .inputarea{
+            width: 100%;height: 50px;
+        }
+        #text{
+            width: 300px;height: 50px;
+            float: left;
+        }
+        #submit{
+            width: 150px;height: 50px;
+            float: left;
+            background: #73ff34;
+            border:none;
+            cursor: pointer;
+        }
+        .show{
+            width: 100%;
+            background: #d7d7d7;
+            flex-grow: 1;
+        }
+        .plan{
+            width: 50%;
+            height: 100%;
+            overflow: auto;
+            background: #34ffd0;
+            float: left;
+        }
+        .done{
+            width: 50%;
+            height: 100%;
+            overflow: auto;
+            background: #00a2ff;
+            float: right;
+        }
+        ul li input{
+            float: left;
+            width: 30px;
+            height:30px;
+            margin:0;
+            padding: 0;
+        }
+        ul li span{
+            float: left;
+            width: 440px;
+            height: auto;
+
+            line-height: 30px;
+            padding-left: 30px;
+        }
+        ul li time{
+            width: 200px;
+            height: 30px;
+            float: right;
+            background: red;
+            line-height: 30px;
+            color:#fff;
+            text-align: center;
+        }
+        .contenttitle{
+            width: 50%;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            color: red;
+            line-height: 30px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+<div class="title">TODO LIST</div>
+<div class="inputarea">
+    <input type="text" id="text" >
+    <input type="button" id="submit" value="提交">
+
+</div>
+<div class="show">
+    <div class="contenttitle">未完成</div>
+    <div class="contenttitle">已完成</div>
+    <ul class="plan">
+        <li>
+            <input type="checkbox">
+            <span contenteditable="true">1231569</span>
+            <time>2017/5/3 15.34</time>
+        </li>
+    </ul>
+    <ul class="done">
+        <li>
+            <input type="checkbox">
+            <span contenteditable="true">1231569</span>
+            <time>2017/5/3 15.34</time>
+        </li>
+    </ul>
+</div>
+</body>
+<script>
+    var text=document.querySelector("#text");
+    var submit=document.querySelector("#submit");
+    var plan=document.querySelector(".plan");
+    var done=document.querySelector(".done");
+    function  getData() { //获取数据
+        return localStorage.todo?JSON.parse(localStorage.todo):[];
+    }
+    function saveData(data){ //保存数据
+        localStorage.todo=JSON.stringify(data);
+    }
+
+    function reWrite() {   //  页面刷新
+        var data=getData();
+        var str1=""; var str2="";
+        data.forEach(function (v,i) {
+            if(!v.done){
+                str1+=`<li id=${i}><input type="checkbox" onfocus="changestate(this)"><span contenteditable="true" onblur="changecontent(this)">${v.content}</span><time>${time(v.time)}</time></li>`;
+            }
+            else{
+                str2+=`<li id=${i}><input type="checkbox" onfocus="del(this)"><span>${v.content}</span><time>${time(v.time)}</time></li>`;
+            }
+
+        });
+        plan.innerHTML=str1;
+        done.innerHTML=str2;
+    }
+    reWrite();
+
+    submit.onclick=function () {   //提交事件
+        if(text.value==""){
+            return;
+        }
+        var val=text.value;
+        text.value="";
+        var data=getData();
+        var date=new Date();
+        var time=date.getTime();
+        data.push({content:val,time,done:false});
+        saveData(data);
+        reWrite();
+    };
+
+
+    function time(t) {
+        var date=new Date();
+        date.setTime(t);
+        var year=date.getYear();
+        var month=setZero(date.getMonth()+1);
+        var day=setZero(date.getDate());
+        var hour=setZero(date.getHours());
+        var minutes=setZero(date.getMinutes());
+        var seconds=setZero(date.getSeconds());
+        return year+"/"+month+"/"+day+"/"+hour+"/"+minutes+"/"+seconds;
+    }  //把毫秒转为2017/05/03 17:10:20
+    function setZero(num) {
+        if(num<10){
+            return "0"+num;
+        }else{
+            return num;
+        }
+    }
+
+    function  changestate(ele) { //未完成 变成 已完成
+        var id=ele.parentNode.id;
+        var data=getData();
+        data[id].done=true;
+        saveData(data);
+        reWrite();
+    }
+
+    function del(ele) {   //已完成的删除功能
+        var id=ele.parentNode.id;
+        var data=getData();
+        data.splice(id,1);  //splice 万能添加删除工具
+        saveData(data);
+        reWrite();
+    }
+
+    function changecontent(ele) {  //失去焦点/改变content,
+        var id=ele.parentNode.id;
+        var val=ele.innerHTML;
+        var data=getData();
+        data[id].content=val;
+        saveData(data);
+        reWrite();
+    }
+</script>
+</html>

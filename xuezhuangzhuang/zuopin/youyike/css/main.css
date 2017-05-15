@@ -1,0 +1,229 @@
+header{
+    width: 100%;
+    height: 0.89rem;
+    background-color: #007be3;
+    top: 0;
+    position: fixed;
+} 
+.box{
+	    width: 2.27rem;
+    height: 0.68rem;
+    margin: 0 auto;
+    padding-top: 0.16rem;
+}
+header .box a.logo{
+	background-image: url('../img/logo.png');
+	width: 0.7rem;
+    height: 0.67rem;
+    background-position:  center center ;
+    background-repeat: no-repeat;
+    float: left;
+    background-size: 0.7rem;
+}
+header .box h3{
+	font-size: 0.36rem;
+    color: #fff;
+    line-height: 0.68rem;
+    float: left;
+    margin-left: 0.16rem;
+}
+.banner{
+	width: 100%;
+	/* height: 100%; */
+}
+.banner1 img{
+	width: 100%;
+	height: 4.2rem;
+}
+.content{
+	padding: 0.28rem 0.2rem 0;
+	overflow: hidden; 
+	width: 100%;
+	height: 4.84rem;
+	background: #F5F6FA;
+}
+.content ul{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+.content ul li{
+	width: 1.55rem;
+	height: 1.96rem;
+	text-align: center;
+    font-size: 0.24rem;
+    color: #000;
+}
+.content ul li a{
+	display: block;
+	background: white;
+	height: 1.56rem;
+	border-radius: 0.25rem;
+	padding-top: 0.25rem;
+	margin: auto;
+}
+.content ul li a div.li-1{
+background-image: url('../img/shouye6.png');
+background-position: 0 0;
+background-repeat: no-repeat;
+background-size: 2rem;
+}
+.content ul li a div.li-2{
+background-image: url('../img/shouye6.png');
+background-position: -0.98rem 0rem ;
+background-repeat: no-repeat;
+background-size: 2rem;
+}
+.content ul li a div.li-3{
+background-image: url('../img/shouye6.png');
+background-position:0.15rem -1.1rem;
+background-repeat: no-repeat;
+background-size: 2rem;
+}
+.content ul li a div.li-4{
+background-image: url('../img/ufo.png');
+background-repeat: no-repeat;
+background-size: 100%;
+}
+.content ul li a div.li-5{
+background-image: url('../img/shouye6.png');
+background-position:-0.98rem -1.1rem;
+background-repeat: no-repeat;
+background-size: 2rem;
+}
+.content ul li a div.li-6{
+background-image: url('../img/shouye6.png');
+background-position:-0rem -3.3rem;
+background-repeat: no-repeat;
+background-size: 2rem;
+}
+
+.content ul li a div.li-7{
+background-image: url('../img/shouye6.png');
+background-position:0.1rem -2.2rem;
+background-repeat: no-repeat;
+background-size: 2rem;
+}
+
+.content ul li a div.li-8{
+background-image: url('../img/shouye6.png');
+background-position:-0.98rem -2.2rem;
+background-repeat: no-repeat;
+background-size: 2rem;
+}
+.content ul li a div{
+	width: 1.05rem;
+	height:1.05rem;
+	margin: auto;
+}
+.server{
+	width: 100%;
+	background: white;
+}
+.title{
+	width: 100%;
+    height: 0.63rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    text-align: center;
+    line-height: 0.63rem;
+    font-size: 0.24rem;
+    color: #1378ba;
+}
+.server .max{
+	width: 100%;
+    height: 2.18rem;
+    border-bottom: 0.02rem  solid #e8e8e8;
+}
+.server .max li{
+	width: 50%;
+	height: 100%;
+	background: white;
+	border-right: 0.02rem solid #e8e8e8;
+	float: left;
+	padding: 0.38rem 0rem 0.48rem 0.16rem;
+}
+.left{
+	width: 1.8rem;
+    float: left;
+    height: 100%;
+}
+.left h2{
+	font-size: 0.24rem;
+	color: black;
+}
+.left h3{
+	font-size: 0.24rem;
+	color: #999999;
+}
+.server .max li .right {
+	width: 1.5rem;
+    height: 100%;
+    float: left;
+    background:#fff;
+    background-repeat: no-repeat;
+    background-image: url('../img/shouye6.png');
+    background-position: 0 -4.4rem;
+    background-size: 2rem;
+}
+.server .max li .right1 {
+	width: 1.5rem;
+    height: 100%;
+    float: left;
+    background:#fff;
+    background-repeat: no-repeat;
+    background-image: url('../img/shouye6.png');
+    background-position: 0 -5.9rem;
+    background-size: 2rem;
+}
+.server .min{
+	width: 100%;
+    height: 1.38rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+.server .min li{
+	float: left;
+    width: 33.33%;
+    height: 100%;
+    border-right: 1px solid #e8e8e8;
+    padding: 0.4rem 0 0.38rem 0.2rem;
+}
+.server .min li .left2{
+    width: 0.6rem;
+    height: 0.6rem;
+    float: left;
+}
+.server .min li  h2{
+	font-size: 0.24rem;
+	color: black;
+}
+.server .min li  h3{
+	font-size: 0.24rem;
+	color: #999999;
+}
+.guding{
+	width: 100%;
+    height: 0.89rem;
+    background-color: #007be3; 
+    top: 0;
+    position: fixed;
+}
+.guding ul{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.guding ul li{
+	width: 20%;
+    height: 100%;
+    float: left;
+    position: relative;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 1rem;
+    color: white;
+}
+.left a{
+    color: black;
+}

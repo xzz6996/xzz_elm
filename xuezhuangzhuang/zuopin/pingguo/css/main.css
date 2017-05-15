@@ -1,0 +1,518 @@
+﻿
+header{
+	width: 100%;
+	height: 100%;
+	background: #444;
+}
+.header-top{ 
+	width: 100%;
+	/* height: 40px; */
+	background: #444;
+	margin: 0 auto;
+	overflow: hidden;
+} 
+.header-top main{
+	max-width: 976px;
+	height: 100%;
+	background: #444;
+	margin: 0 auto;
+}
+.header-top main div{
+font-size: 12px;
+color: #a8a8a8;
+float: right;
+line-height: 40px;
+}
+
+header nav{
+	width: 100%;
+	height: 44px;
+	background:rgba(0,0,0,0.8) ;
+	
+
+}
+header nav main{
+max-width: 1024px;
+padding: 0 24px;
+height: 44px;
+margin: 0 auto;
+
+}
+
+header main ul {
+	text-align: justify;	
+	line-height: 44px;
+	color: white;
+
+}
+header main ul li{
+	display: inline-block;
+	height: 44px;
+	color: white;
+	opacity: 1;
+}
+header main ul li:hover{
+
+	opacity:0.6;
+}
+header main ul:after{
+	display: inline-block;/* 变成行元素 */
+	height: 0px;
+	width: 100%;
+	content:"";
+}
+.banner{
+	width: 100%;
+	height: 100%;
+	background: #F3F3F3;
+	position: relative;
+}
+.bannerz{
+width:100%;
+height: 500px;
+margin: 0 auto;
+position: relative;
+}
+
+.bannerz a{
+ display: block;
+ width: 100%;
+ height: 100%;
+}
+
+.left{
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+.right{
+	width: 10%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	bottom:0;
+	
+}
+.left:hover .yuan1{
+	opacity: 1;
+}
+.right:hover .yuan2{
+	opacity: 1;
+}
+.yuan1{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: #ccc;
+	left: 10px;
+	top: 218px;
+	position: absolute;
+	margin: 0 auto;
+	font-size: 40px;
+	color: white;
+	line-height: 64px;
+	text-align: center;
+	opacity: 0;
+}
+.yuan2{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: #ccc;
+	right: 10px;
+	top: 218px;
+	position: absolute;
+	margin: 0 auto;
+	font-size: 40px;
+	color: white;
+	line-height: 64px;
+	text-align: center;
+	opacity: 0;
+}
+.lb{
+	width: 180px;
+	height: 22px;
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	right: 0px;
+	margin: auto;
+}
+.tiao{
+	width: 50px;
+	height: 2px;
+	background:#222222;
+  	
+  	float:left;
+  	margin-left: 10px;
+	
+}
+.tiao1{
+	width: 50px;
+	height: 2px;
+	background:#808080;
+  	
+	float:left;
+  	margin-left: 10px;
+}
+.tiao2{
+	width: 50px;
+	height: 2px;
+	background:#808080;
+  
+  	margin-left: 10px;
+  	float:left;
+}
+.si{
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+.sigetu{
+	width: 100%;
+	overflow: hidden;
+	background: white;
+}
+
+footer{
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2;
+}
+
+
+.di2xing .max{
+width: 20%;
+float: left;
+/* height: 245px; */
+}
+.di2xing .max li{
+width: 176px;
+height: 15px;
+font-size: 12px;
+color: #555555;
+margin-bottom: 10px;
+
+
+}
+.di2xing .min{
+width: 100%;
+
+float: left;
+font-size: 20px;
+color: black;
+
+}
+.di2xing .min li{
+width: 100%;
+height: 15px;
+font-size: 12px;
+color: black;
+margin-bottom: 10px;
+border-bottom: 1px solid #888895;
+}
+
+
+
+
+ @media screen and (min-width:1024px){  /* 大于1024 */
+	 	.header-top{
+	max-width: 976px;
+}
+footer .footer-box{
+	max-width:980px;
+	/* height:100%; */
+	background: #f2f2f2;
+	margin: auto;
+}
+.diyixing{
+	width: 100%;
+	/* height: 100%; */
+	font-size: 12px;
+	color:#888 ;
+	line-height: 32px;
+	border-bottom: 1px solid #D6D6D6;
+}
+.di3xing{
+	width:100%;
+	/* overflow: hidden;
+ */	color: #888;
+	font-size: 8px;
+    line-height: 24px;
+  padding-top: 50px;
+
+
+} 
+ .wz123{
+ width: 100%;
+font-size: 8px;
+color:#888895 ;
+ border-bottom: 1px solid #d6d6d6;
+
+}
+.wz456{
+ width: 100%;
+font-size: 12px;
+color:#888895 ;
+
+}
+.wz789{
+	width: 100%;
+font-size: 12px;
+color:#888895 ;
+
+}
+
+.di2xing{
+max-width: 980px;
+/* height: 245px; */
+padding-top: 20px;
+overflow: hidden;
+margin: auto;
+
+
+}
+
+.bannerz a{
+ display: block;
+background-image: url('../img/macbookpro_large.jpg');
+ background-position: center center;
+ background-size:100% 100%;
+background-repeat: no-repeat;
+}
+
+.diyige{
+	width: 25%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/a.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+
+.di2ge{
+	width: 25%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/b.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+.di3ge{
+	width: 25%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/c.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+.di4ge{
+	width: 25%;
+	height: 200px;
+	background-image: url('../img/d.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+
+
+footer .footer-box{
+	max-width: 980px;
+	background: #f2f2f2;
+	margin: auto;
+ }
+.di2xing .min{
+	display: none;
+}
+
+
+
+}
+
+ 
+@media screen and (max-width:1024px){  /* 小于1024 */
+	
+	.header-top{
+	padding:0 24px ;
+}
+ .header-top main div{
+ 	padding: 0 24px;
+ }
+ header nav main{
+ 	padding: 0 24px;
+ }
+
+
+}
+
+ @media screen and (min-width:768px){   /* 大于768 */
+	header nav main .min-nav{
+		display: none;
+	}
+	header nav main .max-nav{
+		display: block;
+	}
+.di2xing  .max{
+	display: block;
+}
+
+.di2xing  .min{
+	display: none;
+}	
+
+
+}
+ 
+ @media screen and (max-width:768px){  /* 小于768 */
+	header nav main .max-nav{
+		display: none;
+	}
+	header nav main .min-nav{
+		display: block;
+	}
+.bannerz a{
+ display: block;
+
+background-image: url('../img/macbookpro_small.jpg');
+ background-position: center center;
+ background-size:100% auto;
+ background-repeat: no-repeat;
+}
+ .diyige{
+	width: 100%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/a.jpg');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+
+.di2ge{
+	width: 100%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/b.jpg');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+.di3ge{
+	width: 100%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/c.jpg');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+.di4ge{
+	width: 100%;
+	height: 200px;
+	background-image: url('../img/d.jpg');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+.di2xing  .min{
+	display: block;
+}
+
+.di2xing  .max{
+	display: none;
+}
+footer .footer-box{
+	width: 100%;
+}
+
+	
+}
+ @media screen and (min-width:768px) and (max-width:1024px){  /* 大于768小于1024 */
+
+.bannerz a{
+ display: block;
+ width: 100%;
+ height: 100%;
+background-image: url('../img/macbookpro_medium.jpg');
+background-position: center center;
+ background-size:100% 100%;
+ background-repeat: no-repeat;
+
+}
+
+.diyige{
+	width: 50%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/a.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+
+.di2ge{
+	width: 50%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/b.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+.di3ge{
+	width: 50%;
+	height: 200px;
+	border-top: 1px solid white;
+	border-right:1px solid white;
+	background-image: url('../img/c.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+.di4ge{
+	width: 50%;
+	height: 200px;
+	background-image: url('../img/d.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+}
+
+
+footer .footer-box{
+	padding: 0 24px;
+	background: #f2f2f2;
+	margin: auto;
+
+}
+
+
+
+}
+
