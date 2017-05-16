@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="http:////at.alicdn.com/t/font_5dnol7ofw2ymn29.css">
+    <link rel="stylesheet" href="css/index.css">
     <style>
         @font-face {
             font-family: 'iconfont';  /* project id 251507 */
@@ -177,24 +178,20 @@
                     <hr>
                 </div>
                 <div class="row rowul">
-                    <ul>
-                        <li class="active"><a href="#"><img src="img/yidong.jpg" alt=""></a></li>
-                        <li><a href="zuopin/todolist.html"><img src="img/todolist.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="img/saolei.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="img/dazi.png" alt=""></a></li>
-                        <li><a href="zuopin/canvas.html"><img src="img/canvas.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="img/tianqi.gif" alt=""></a></li>
-                    </ul>
-                    <div class="lunbo">
-                        <div class="yuan active"></div>
-                        <div class="yuan"></div>
-                        <div class="yuan"></div>
-                        <div class="yuan"></div>
-                        <div class="yuan"></div>
-                        <div class="yuan"></div>
+                    <div class="carousel content-main">
+                        <ul class="list">
+
+                                <li class="active"><a href="zuopin/yidong/index.html"><img src="img/yidong.jpg" alt=""></a></li>
+                                <li><a href="zuopin/todolist.html"><img src="img/todolist.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/saolei.jpg" alt=""></a></li>
+                                <li><a href="zuopin/dazi/kaishi/dazi.html"><img src="img/dazi.png" alt=""></a></li>
+                                <li><a href="zuopin/canvas.html"><img src="img/canvas.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/tianqi.gif" alt=""></a></li>
+
+                        </ul>
                     </div>
-                    <div class="lbleft"> < </div>
-                    <div class="lbright"> > </div>
+
+
                 </div>
             </div>
         </div>
@@ -297,6 +294,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
+<script src="js/index.js"></script>
 <script>
     $(function(){
         $('.box').fullpage();
@@ -521,43 +519,17 @@
     })
 */
 </script><!--按钮-->
-<script>
-    var lb=$(".lunbo .yuan");
-    var banners=$(".rowul ul li");
-
-    lb.mouseover(function () {
-        var index=$(this).index();
-        num16=index;
-        lb.filter(".active").removeClass("active").end().filter(this).addClass("active");
-        banners.filter(".active").removeClass("active").end().eq(index).addClass("active");
-
-    });
-    var tt=setInterval(move03,3000);
-    var num16=0;
-    function move03() {
-        num16++;
-        if(num16>=lb.length){
-            num16=0;
-        }
-        if(num16<0){
-            num16=banners.length-1;
-        }
-        lb.filter(".active").removeClass("active").end().eq(num16).addClass("active");
-        banners.filter(".active").removeClass("active").end().eq(num16).addClass("active");
-
+<script type="text/javascript">
+    var setting = {
+        width:1000,
+        height:270,
+        postWidth:658,
+        postHeight:270,
+        scale:0.8,
+        speed:500,
+        verticalAlign:"center"
     };
-
-    $(".rowul").hover(function () {
-        clearInterval(tt);
-    },function () {
-        tt=setInterval(move03,3000);
-    });
-    $(".lbright").click(function () {
-        move03();
-    });
-    $(".lbleft").click(function () {
-        num16-=2;
-        move03();
-    });
+    $(".carousel").attr("data-setting",'{ "width":900,"height":411,"postWidth":658}')
+    Carousel.init($(".carousel"))
 </script><!--轮播图-->
 </html>
