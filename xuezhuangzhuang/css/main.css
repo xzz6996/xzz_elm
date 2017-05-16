@@ -5,7 +5,8 @@
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/16.jpg) no-repeat center center;
+    opacity: 0.95;
+    background: url("../img/16.jpg") no-repeat center center;
     background-size: 100% 130%;
 }
 
@@ -125,7 +126,7 @@
 }
 
 .container{
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin:0 auto;
 }
@@ -278,9 +279,9 @@ small{
     transition: all 0.5s ease-out;
 }
 
-.baojiang{
+.ziwo{
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 .call{
     width: 100%;
@@ -404,10 +405,86 @@ i{
     width: 100%;
     height: 100%;
 }
-
-
-
-
+.ccc{
+    width: 100%;
+    height:100%;
+    background-image:url("../img/pure.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.cleft{
+    width: 300px;
+    float: left;
+    height: 100%;
+    position: absolute;
+    left: -300px;
+}
+.cleft1{
+    width: 100%;
+    height: 60%;
+    margin: 40% auto;
+}
+.toux{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 10px auto;
+    background-image:url("../img/touxiang.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.cleft1 .div1{
+    text-align: center;
+    color: #c0c0c0;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.div2{
+    margin-top: 10px;
+    height: 50px;
+}
+.cright{
+    width: 500px;
+    float: right;
+    height: 100%;
+    position: absolute;
+    right: -600px;
+}
+.cright1{
+    width: 100%;
+    height: 80%;
+    margin:25% auto;
+}
+.cright1 div{
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    color: #c0c0c0;
+    margin:90px auto;
+}
+.ctop{
+    width: 120px;
+    height: 40px;
+    font-size: 24px;
+    color: #c0c0c0;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    top:0px;
+    left:-150px;
+}
+.huabu1{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
 @media screen and (max-width:768px){     /*小于768*/
     .message input{
          margin:10px 17px;
