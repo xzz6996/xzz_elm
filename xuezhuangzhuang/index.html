@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="http:////at.alicdn.com/t/font_5dnol7ofw2ymn29.css">
-    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" href="css/jquery.flipster.css">
+    <link rel="stylesheet" href="css/flipsternavtabs.css">
     <style>
         @font-face {
             font-family: 'iconfont';  /* project id 251507 */
@@ -21,6 +24,14 @@
 </head>
 <body>
 <div class="box" id="fullpage">
+    <ul id="menu">
+        <li><a href="#page1">首页</a></li>
+        <li><a href="#page2">自我介绍</a></li>
+        <li><a href="#page3">我的技能</a></li>
+        <li><a href="#page4">我的项目</a></li>
+        <li><a href="#page5">我的项目</a></li>
+        <li><a href="#page6">联系我</a></li>
+    </ul><!--导航-->
     <div class="section">
         <div class="intro">
             <div class="intro-body">
@@ -168,32 +179,49 @@
                </div>
            </div>
     </div><!--我的项目-->
-    <div class="section">
-        <div class="xiangmu1">
-            <div class="container">
-                <div class="section-title center">
-                    <h2>我的项目</h2>
-                    <hr>
+    <div class="section ss">
+        <div class="htmleaf-container">
+            <header class="htmleaf-header">
+                <h1></h1>
+                <div class="htmleaf-demo center">
                 </div>
-                <div class="row rowul">
-                    <div class="carousel content-main">
-                        <ul class="list">
+            </header>
+            <div class="htmleaf-content bgcolor-3">
+                <div id="Main-Content">
+                    <div class="Container">
+                        <!-- Flipster List -->
+                        <div class="flipster">
+                            <ul class="flip-items">
+                                <li id="Coverflow-1" title="Cricket" data-flip-category="Fun Sports">
+                                    <a href="zuopin/yidong/index.html"><img src="img/yidong.jpg" alt=""></a>
+                                </li>
+                                <li id="Coverflow-2" title="Surfing" data-flip-category="Fun Sports">
+                                    <a href="zuopin/todolist.html"><img src="img/todo.jpg"></a>
+                                </li>
+                                <li id="Coverflow-3" title="Baseball" data-flip-category="Boring Sports">
+                                    <a href="zuopin/saolei/saolei1/saolei.html"><img src="img/sao.jpg"></a>
+                                </li>
+                                <li id="Coverflow-4" title="Running" data-flip-category="Boring Sports">
+                                    <a href="zuopin/dazi/kaishi/dazi.html"><img src="img/dada.jpg"></a>
+                                </li>
+                                <li id="Coverflow-7" title="Air Kicking" data-flip-category="These are Sports?">
+                                    <a href="zuopin/canvas.html"><img src="img/canvas1.jpg"></a>
+                                </li>
+                                <li id="Coverflow-5" title="Bike Sitting" data-flip-category="These are Sports?">
+                                    <a href="zuopin/tianqi/jquery111/tianqi.html"><img src="img/tianqi.gif"></a>
+                                </li>
+                                <!--<li id="Coverflow-6" title="Extreme Bike Sitting" data-flip-category="These are Sports?">
+                                    <img src="">
+                                </li>-->
+                            </ul>
+                        </div>
+                        <!-- End Flipster List -->
 
-                            <li class="active"><a href="zuopin/yidong/index.html"><img src="img/yidong.jpg" alt=""></a></li>
-                            <li><a href="zuopin/todolist.html"><img src="img/todolist.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="img/saolei.jpg" alt=""></a></li>
-                            <li><a href="zuopin/dazi/kaishi/dazi.html"><img src="img/dazi.png" alt=""></a></li>
-                            <li><a href="zuopin/canvas.html"><img src="img/canvas.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="img/tianqi.gif" alt=""></a></li>
-
-                        </ul>
                     </div>
-
-
                 </div>
             </div>
         </div>
-    </div><!--我的项目-->
+    </div><!--我的项目轮播-->
     <div class="section">
         <div class="call">
             <div class="container">
@@ -267,8 +295,8 @@
                     </div>
                 </div>
                 <div class="message">
-                    <input type="text" placeholder="姓名">
-                    <input type="text" placeholder="邮箱">
+                    <input type="text" placeholder=" 姓名">
+                    <input type="text" placeholder=" 邮箱">
                 </div>
                 <div class="message1">
                     <textarea id="textarea" placeholder="内容" rows="4"></textarea>
@@ -278,23 +306,45 @@
         </div>
     </div><!--联系我-->
 </div>
-
 </body>
-
 <script src="js/jquery.js"></script>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
-<script src="js/index.js"></script>
+<script src="js/jquery.flipster.js"></script>
 <script src="js/echarts.common.min.js"></script>
 <script>
     $(function(){
-        $('.box').fullpage();
+        $('.box').fullpage({
+            'verticalCentered': false,
+            'css3': true,
+            'sectionsColor': ['#254875', '', '#254587', '#695684', '#ccc', '#ccc','#e8e8e8'],
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+            'navigation': true,
+            menu: '#menu',
+            controlArrowColor:"red",
+            'navigationPosition': 'left',
+            'navigationTooltips': ['首页', '自我介绍', '我的技能', '我的项目', '我的项目', '联系我'],
+            afterLoad:function (an,index) {
+                if(index==2){
+                    $(".cleft").css({left:200}).css({transition:"1s"});
+                    $(".cright").css({right:200}).css({transition:"1s"});
+                    $(".ctop").css({left:"40%"}).css({transition:"1s"});
+                }
+            },
+            onLeave:function (index) {
+                if(index==2){
+                    $(".cleft").animate({left:-300}).css({transition:"1s"});
+                    $(".cright").animate({right:-500}).css({transition:"1s"});
+                    $(".ctop").css({left:-150}).css({transition:"1s"});
+                }
+            }
+        })
     });
-    $(function(){
+/*    $(function(){
         $('#fullpage').fullpage({
             'verticalCentered': false,
             'css3': true,
-            'sectionsColor': ['#254875', '', '#254587', '#695684', '#ccc', '#ccc'],
+            'sectionsColor': ['#254875', '', '#254587', '#695684', '#ccc', '#ccc','#e8e8e8'],
             anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
             'navigation': true,
             controlArrowColor:"red",
@@ -315,7 +365,7 @@
                 }
             }
         })
-    });
+    });*/
 </script><!--fullpage-->
 <script>
 
@@ -323,33 +373,21 @@
         $.fn.fullpage.moveTo('page6');
     });
     $(document).on('click', '.btnmy', function(){
-        $.fn.fullpage.moveTo('page3');
+        $.fn.fullpage.moveTo('page4');
     });
    /* $(".btnabout").click(function () {
         $.fn.fullpage.moveTo('page6');
     })
 */
 </script><!--按钮-->
-<script type="text/javascript">
-    var setting = {
-        width:1000,
-        height:270,
-        postWidth:658,
-        postHeight:270,
-        scale:0.8,
-        speed:500,
-        verticalAlign:"center"
-    };
-    $(".carousel").attr("data-setting",'{ "width":900,"height":411,"postWidth":658}')
-    Carousel.init($(".carousel"))
-</script><!--轮播图-->
 <script>
     var myChart = echarts.init(document.getElementById('huabu'));
     var option = {
         title : {
             text: '我的技能图',
            /* subtext: '纯属虚构',*/
-            x:'center'
+            x:'center',
+            top:50,
         },
         tooltip : {
             trigger: 'item',
@@ -429,5 +467,29 @@
     };
     myChart.setOption(option);
 </script><!--画布-->
+<script>
+    $(function(){
 
+        /*$(".flipster").flipster({
+         style: 'carousel',
+         enableNav: true
+         });*/
+        $(".flipster").flipster({
+            itemContainer: 			'ul', // Container for the flippin' items.
+            itemSelector: 			'li', // Selector for children of itemContainer to flip
+            style:							'carousel', // Switch between 'coverflow' or 'carousel' display styles
+            start: 							0, // Starting item. Set to 0 to start at the first, 'center' to start in the middle or the index of the item you want to start with.
+
+            enableKeyboard: 		true, // Enable left/right arrow navigation
+            enableMousewheel: 	true, // Enable scrollwheel navigation (up = left, down = right)
+            enableTouch: 				true, // Enable swipe navigation for touch devices
+
+            enableNav: 					true, // If true, flipster will insert an unordered list of the slides
+            enableNavButtons: 	true, // If true, flipster will insert Previous / Next buttons
+
+            onItemSwitch: 			function(){}, // Callback function when items are switches
+        });
+
+    });
+</script><!--轮播图-->
 </html>
