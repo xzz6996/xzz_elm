@@ -6,7 +6,6 @@
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    opacity: 0.95;
     background: url("../img/16.jpg") no-repeat center center;
     background-size: 100% 130%;
 }
@@ -430,7 +429,7 @@ i{
 .cleft1{
     width: 100%;
     height: 60%;
-    margin: 40% auto;
+    margin: 60% auto;
 }
 .toux{
     width: 150px;
@@ -467,7 +466,7 @@ i{
 .cright1{
     width: 100%;
     height: 80%;
-    margin:25% auto;
+    margin:35% auto;
 }
 .cright1 div{
     text-align: center;
@@ -484,7 +483,7 @@ i{
     text-align: center;
     line-height: 80px;
     position: absolute;
-    top:30px;
+    top:50px;
     left:-150px;
 }
 .huabu1{

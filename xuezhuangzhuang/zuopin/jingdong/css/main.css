@@ -924,6 +924,10 @@ main{
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+    color:#666;
+}
+.zn_item:hover{
+    border-bottom: 1px solid red;
 }
 .zn_item:nth-child(1){
     margin-left: -10px;
@@ -932,7 +936,11 @@ main{
     padding: 10px;
 }
 .zs-list{
-    height: 100%
+    height: 100%;
+   display:block;
+}
+.zs-list2{
+    display: none;
 }
 .bottom_list{
     position: relative;
@@ -979,6 +987,13 @@ main{
     overflow: hidden;
     word-wrap: break-word;
     word-break: break-all;
+    color:#666;
+}
+.zn_item:hover{
+    color: #c81623;
+}
+.top_name:hover{
+    color: #c81623;
 }
 .bottom_list01{
     border-right: 0;
@@ -1400,6 +1415,8 @@ section.aishenghuo ul.aiguang li{
     width: 590px;
     height: 100%;
 }
+
+
 section.aishenghuo ul.aiguang li .aiguangtop{
     width: 590px;
     height: 58px;
@@ -1407,6 +1424,8 @@ section.aishenghuo ul.aiguang li .aiguangtop{
     background-color: #974676;
     position: relative;
 }
+
+
 section.aishenghuo ul.aiguang li .aiguangtop1{
     background-color: #cd375e;
 }
@@ -2531,6 +2550,7 @@ footer{
     left: -29px;
     width: 35px;
     margin-top: -61px;
+    z-index: 500;
 }
 .ygd2{
     position: relative;
@@ -3374,4 +3394,32 @@ div.zhibo-item5{
 .zbitem .active{
     z-index: 10;
     opacity: 1;
+}
+.zbleft0{
+    position: absolute;
+    left: 0;
+    top: 145px;
+    background:rgba(71, 60, 60, 0.95);
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 500;
+}
+.zbright0{
+    position: absolute;
+    right: 0;
+    top: 145px;
+    background:rgba(71, 60, 60, 0.95);
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 500;
 }
