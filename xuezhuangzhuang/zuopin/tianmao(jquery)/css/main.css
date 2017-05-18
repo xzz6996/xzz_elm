@@ -529,7 +529,7 @@ color: red;
 	margin:0 auto;
 	position: relative;
 }
-.banner1 img{
+.banner1 .img{
 	width: 1200px;
 	height: 500px;
 	position: absolute;
@@ -572,7 +572,7 @@ color: red;
 	position: absolute;
 	top: 0;
 	left:0;
-	background-color: rgba(238,238,238,.95);
+	background-color: rgba(238,238,238,.9);
 
 	z-index: 10;
 

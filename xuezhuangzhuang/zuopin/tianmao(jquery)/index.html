@@ -215,12 +215,12 @@
 
  <div class="banner">
 	<div class="banner1">
-		<img src="img/1banner.jpg" class="active">
-		<img src="img/2banner.jpg" >
-		<img src="img/3banner.jpg" >
-		<img src="img/4banner.jpg" >
-		<img src="img/5banner.jpg" >
-		<img src="img/6banner.jpg" >
+		<img src="img/1banner.jpg" class="active img">
+		<img src="img/2banner.jpg" class="img">
+		<img src="img/3banner.jpg" class="img">
+		<img src="img/4banner.jpg" class="img">
+		<img src="img/5banner.jpg" class="img">
+		<img src="img/6banner.jpg" class="img">
 
 		<div class="left">
 			<ul>
@@ -4741,7 +4741,7 @@ Array.from(gd2).forEach(function (ele,index) {
 </script><!--我的淘宝-->
 <script>
     var lb=$(".lunbobox ul li");
-    var banners=$(".banner1 img");
+    var banners=$(".banner1 .img");
     var colorarr=["#144ED4","#FD7801","#000000","#E8E8E8","#e8e8e8","#E5F4C9"];
     lb.mouseover(function () {
         var index=$(this).index();
@@ -4751,7 +4751,7 @@ Array.from(gd2).forEach(function (ele,index) {
         $(".banner").css("background",colorarr[index]);
 
     });
-    var tt=setInterval(move03,3000);
+    var tt=setInterval(move03,5000);
     var num16=0;
     function move03() {
         num16++;
@@ -4770,7 +4770,7 @@ Array.from(gd2).forEach(function (ele,index) {
     $(".banner").hover(function () {
         clearInterval(tt);
     },function () {
-        tt=setInterval(move03,3000);
+        tt=setInterval(move03,5000);
     });
 </script><!--jquery/banner-->
 <script>

@@ -59,20 +59,20 @@
 <div class="banner">
 
 <div class="bannerz">	
-<a href=""></a>
-
-<div class="lb">
-  <dic class="tiao"></dic>
-  <dic class="tiao1"></dic>
-  <dic class="tiao2"></dic>
-
+<div class="a"></div>
+<div class="a a1"></div>
 </div>
-</div>
-<a href=""><div class="left">
+	<div class="lb">
+		<div class="tiao"></div>
+		<div class="tiao tiao1"></div>
+		<!--<div class=" tiao tiao2"></div>-->
+
+	</div>
+<a href="javascript:"><div class="left">
 	<div class="yuan1"> <
 	</div>
 </div></a>
-<a href=""><div class="right">
+<a href="javascript:"><div class="right">
 	<div class="yuan2"> ></div>
 </div></a>
 </div>
@@ -186,7 +186,66 @@
 </footer><!-- 结束 -->
 
 </body>
+<script src="jquery.js"></script>
 <script>
+
+/*	var flag = true;
+	$(".fuwu-min li").click(function() {
+		if(flag) {
+			$(this).find(".sublist").slideUp();
+		} else {
+			$(this).find(".sublist").slideDown();
+		}
+		flag = !flag;
+	});*/
+
+	var num = 0;
+
+	function move() {
+		num++;
+		if(num == $(".bannerz .a").length) {
+			num = 0;
+		}
+		if(num < 0) {
+			num = $(".bannerz .a").length - 1;
+		}
+		$(".bannerz .a").eq(num).css({
+			opacity: 1,
+			zIndex: 2
+		}).siblings().css({
+			opacity: 0,
+			zIndex: 1
+		});
+		$(".tiao").eq(num).addClass("active").siblings().removeClass("active");
+
+	}
+
+	$(".banner").hover(function() {
+		clearInterval(t);
+	}, function() {
+		t = setInterval(move, 3000);
+	});
+
+	$(".tiao").hover(function() {
+		var index = $(this).index();
+		$(".bannerz .a").eq(index).css({
+			opacity: 1,
+			zIndex: 2
+		}).siblings().css({
+			opacity: 0,
+			zIndex: 1
+		});
+		$(".tiao").eq(index).addClass("active").siblings().removeClass("active");
+	});
+
+	$(".yuan2").click(function() {
+		move();
+	});
+	$(".yuan1").click(function() {
+		num -= 2;
+		move();
+	});
+	var t = setInterval(move, 3000);
 
 </script>
 </html>
