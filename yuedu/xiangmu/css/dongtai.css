@@ -1,0 +1,266 @@
+.dong{
+	margin-left: 36%;
+	margin-top: 0.6rem;
+}
+.dong1{
+	margin-left: 29%;
+	margin-top: 0rem;
+}
+.d1{
+	width: 7.02rem;
+	height: 1rem;
+	background: white;
+	margin-left: 0.24rem;
+	margin-top: 0.38rem;
+	border-radius: 0.1rem;
+	box-shadow: 0 0 0.05rem 0.02rem #ccc;
+	overflow: hidden;
+}
+.d-tou{
+	width: 0.44rem;
+	height: 0.44rem;
+	border-radius: 50%;
+	background: #22bd83;
+	margin-top: 0.3rem;
+	margin-left: 0.09rem;
+	overflow: hidden;
+	float: left;
+}
+.d-tou1{
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-left: 0.08rem;
+	margin-top: 0.08rem;
+	background-image: url('../img/2017-03-31_184916.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.d-t{
+	width: 5.8rem;
+	height: 0.76rem;
+	float: left;
+	margin-left: 0.18rem;
+	margin-top: 0.13rem;
+	overflow: hidden;
+}
+.d-z{
+	width: 100%;
+	height: 0.26rem;
+	font-size: 0.2rem;
+	color: #666666;
+	margin-top: 0.07rem;
+	line-height: 0.26rem;
+}
+.xv{
+	width: 100%;
+	height: 0.05rem;
+	overflow: hidden;
+	margin-top: 0.06rem;
+}
+.d-d{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	background: #666666;
+	float: left;
+}
+.d-x{
+	width: 2.08rem;
+	height: 0.04rem;
+	border: 0.01rem dashed #dfdfdf;
+	float: left;
+	margin-left: 0.06rem;
+}
+.d-d1{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	background: #666666;
+	float: left;
+	margin-left: 0.06rem;
+}
+.d-z1{
+	width: 100%;
+	height: 0.26rem;
+	font-size: 0.2rem;
+	color: #dfdfdf;
+	margin-top: 0.07rem;
+	line-height: 0.26rem;
+}
+.you-j{
+	width: 0.32rem;
+	height: 0.32rem;
+	border-radius: 50%;
+	background: #f0f0f0;
+	border: 0.02rem solid #dadada;
+	float: right;
+	margin-right: 0.13rem;
+	margin-top: 0.37rem;
+	font-size: 0.2rem;
+	color: #6f6f6f;
+	text-align: center;
+	line-height: 0.3rem;
+}
+.d2{
+	width: 7.02rem;
+	height: 1rem;
+	background: white;
+	margin-left: 0.24rem;
+	margin-top: 0.12rem;
+	border-radius: 0.1rem;
+	box-shadow: 0 0 0.05rem 0.02rem #ccc;
+	overflow: hidden;
+}
+.d-tou2{
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-left: 0.08rem;
+	margin-top: 0.12rem;
+	background-image: url('../img/2017-03-31_192259.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.mui-switch{
+	  width: 0.94rem;
+	  height: 0.48rem;
+	  position: relative;
+	  background-color: #fdfdfd;
+	  box-shadow: #dfdfdf 0 0 0 0 inset;
+	  border-radius: 0.5rem;
+	  border-top-left-radius: 0.5rem;
+	  border-top-right-radius: 0.5rem;
+	  border-bottom-left-radius: 0.5rem;
+	  border-bottom-right-radius: 0.5rem;
+	  background-clip: content-box;
+	  display: inline-block;
+	  -webkit-appearance: none;
+	  user-select: none;
+	  outline: none;
+	  float: right;
+	  margin-top: -0.62rem;
+	}
+.mui-switch:before {
+	content: '';
+	width: 0.52rem;
+	height: 0.38rem;
+	position: absolute;
+	top: 0.04rem;
+	left: 0.02rem;
+	border-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	background-image: url('../img/2017-03-31_213434.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	box-shadow: 0 0.01rem 0.03rem rgba(0, 0, 0, 0.4); 
+}
+.mui-switch:checked {
+	border-color: #64bd63;
+	box-shadow: #64bd63 0 0 0 0.016rem inset;
+	background-color: #64bd63; 
+}
+.mui-switch:checked:before {
+    left: 0.35rem;
+}
+.d-tou3{
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-left: 0.08rem;
+	margin-top: 0.12rem;
+	background-image: url('../img/liaotian_03.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.mui-switch1{
+	  width: 0.94rem;
+	  height: 0.48rem;
+	  position: relative;
+	  background-color: #fdfdfd;
+	  box-shadow: #dfdfdf 0 0 0 0 inset;
+	  border-radius: 0.5rem;
+	  border-top-left-radius: 0.5rem;
+	  border-top-right-radius: 0.5rem;
+	  border-bottom-left-radius: 0.5rem;
+	  border-bottom-right-radius: 0.5rem;
+	  background-clip: content-box;
+	  display: inline-block;
+	  -webkit-appearance: none;
+	  user-select: none;
+	  outline: none;
+	  float: right;
+	  margin-top: -0.62rem;
+	}
+.mui-switch1:before {
+	content: '';
+	width: 0.52rem;
+	height: 0.38rem;
+	position: absolute;
+	top: 0.04rem;
+	right: 0.02rem;
+	border-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	background-image: url('../img/2017-03-31_213434.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	box-shadow: 0 0.01rem 0.03rem rgba(0, 0, 0, 0.4); 
+}
+.mui-switch1:checked {
+	border-color: #64bd63;
+	box-shadow: #64bd63 0 0 0 0.016rem inset;
+	background-color: #64bd63; 
+}
+.mui-switch1:checked:before {
+    right: 0.35rem;
+}
+.d-tou4{
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-left: 0.12rem;
+	margin-top: 0.07rem;
+	background-image: url('../img/liaotian_031.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.d-tou5{
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-left: 0.08rem;
+	margin-top: 0.1rem;
+	background-image: url('../img/liaotian_07.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.del{
+	width: 6.45rem;
+	height: 0.81rem;
+	border-radius: 0.4rem;
+	background: #1eaa4c;
+	box-shadow: 0 0 0.05rem 0.02rem #ccc;
+	position: fixed;
+	bottom: 0;
+	left: 0.53rem;
+	z-index: 1000;
+	overflow: hidden; 
+}
+.del-tu{
+	width: 0.35rem;
+	height: 0.42rem;
+	margin-top: 0.22rem;
+	margin-left: 2.6rem;
+	background-image: url('../img/liaotian_06.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.dong2{
+	margin-left: 47%;
+	margin-top: -0.45rem;
+}
+.dong3{
+	margin-left: 47%;
+	margin-top: -0.07rem;
+}

@@ -1,0 +1,110 @@
+body{
+	font-family: "苹方","Helvetica","微软雅黑";
+}
+.footer{
+	width: 100%;
+	height: 4.16rem;
+	position: fixed;
+	bottom: 0rem;
+	left: 0;	
+	z-index: 1000;
+}
+.foot1{
+	width: 100%;
+	height: 3.6rem;
+	position: relative;
+	margin-top: 0.56rem;
+	overflow: hidden;
+}
+.tuk{
+	width: 0.67rem;
+	height: 0.67rem;
+	border-radius: 50%;
+	background: white;
+	overflow: hidden;
+	box-shadow: 0 0 0.05rem 0.01rem #ccc;
+	margin-left: 0.21rem;
+	margin-top: 0.23rem;
+	float: left;
+}
+.f-tu{
+	width: 0.42rem;
+	height: 0.34rem;
+	margin-top: 0.16rem;
+	margin-left: 0.12rem;
+	background-image: url('../img/2_88.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.tuz{
+	width: 3rem;
+	height: 0.67rem;
+	float: left;
+	margin-top: 0.23rem;
+	overflow: hidden;
+}
+.tuz1{
+	width: 1rem;
+	height: 0.23rem;
+	font-size: 0.18rem;
+	color: #22b17c;
+	margin-left: 0.11rem;
+	margin-top: 0.08rem;
+}
+.tuz2{
+	width: 1.77rem;
+	height: 0.23rem;
+	font-size: 0.18rem;
+	color: #22b17c;
+	margin-left: 0.11rem;
+	margin-top: 0.08rem;
+}
+.pic{
+	width: 150%;
+	height: 1.7rem;
+	margin-left: 0.11rem;
+	margin-top: 1.08rem;
+}
+.pic ul li{
+	width: 1.46rem;
+	height: 1.7rem;
+	float: left;
+	margin-left: 0.17rem;
+}
+.pic ul li img{
+	width: 100%;
+	height: 100%;
+}
+.xuanx{
+	width: 0.95rem;
+	height: 0.48rem;
+	border-radius: 0.5rem;
+	background: #e6e6e6;
+	border: 0.02rem solid #22ac78;
+	margin-top: 0.17rem;
+	float: left;
+	margin-left: 0.21rem;
+	font-size: 0.22rem;
+	color: #22b17c;
+	text-align: center;
+	line-height: 0.48rem;
+}
+.shanchu{
+	width: 0.95rem;
+	height: 0.48rem;
+	border-radius: 0.5rem;
+	background: #e6e6e6;
+	border: 0.02rem solid #22ac78;
+	float: left;
+	margin-top: 0.17rem;
+	margin-left: 0.11rem;
+}
+.shan-tu{
+	width: 0.35rem;
+	height: 0.35rem;
+	background-image: url('../img/liaotian_93.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 0.05rem;
+	margin-left: 0.3rem;
+}

@@ -1,0 +1,451 @@
+body{
+	font-family: "苹方","Helvetica";
+}
+.top{
+	width: 100%;
+	height: 6.67rem;
+	 background: #fafafa;
+	 position: relative;
+}
+.bottom{
+	width: 100%;
+	height: 6.67rem;
+	background:#22bd60 ;
+}
+.shu{
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: 0.6rem;
+	left: 0.66rem;
+}
+.shu img{
+	width: 100%;
+	height: 100%;
+}
+.zhuce{
+	top: -0.2rem;
+	right: 0.6rem;
+	width: 1.28rem;
+	height: 0.75rem;
+	position: absolute;
+	margin:0 auto;
+}
+.zhuce input{
+	width: 1.5rem;
+	height: 0.75rem;
+	border-radius: 0.4rem;
+	border:0.02rem solid #DADADA;
+	background:white;
+	 font-size: 0.32rem;
+	 color:#A5A5A5;
+	margin:0 auto;
+	box-shadow: 0 0 0.01rem 0.01rem rgba(0, 0, 0, 0.1);
+}
+.ziti{
+	width: 2.85rem;
+	height: 2rem;
+	position: absolute;
+	margin: auto;
+	left: 0.66rem;
+	bottom: 2rem;
+	top: 1.15rem;
+}
+.hezi{
+	width:1.65rem;
+	height: 0.35rem;
+	background-image: url('../img/2017-03-30_175458.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+.hezi1{
+	width:1.44rem;
+	height: 0.77rem;
+	background-image: url('../img/2017-03-30_173710.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+}
+.hezi2{
+	width:2.91rem;
+	height: 0.28rem;
+	background-image: url('../img/2017-03-30_173933.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	margin: 0rem auto;
+}
+.hezi3{
+	width:2.19rem;
+	height: 0.29rem;
+	background-image: url('../img/2017-03-30_173943.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+
+}
+form{
+			width: 100%;
+			height: 1.56rem;
+			overflow: hidden;
+			position: relative;
+			margin-top: 1.15rem;
+		}
+.loginbox{
+	width: 6.32rem;
+	height: 4.75rem;
+	position: absolute;
+	background-image: url('../img/2017-03-31_100200.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	bottom: 4.4rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding-left: 0.38rem;
+	padding-right:0.16rem ;
+}
+.xiala{
+	width: 6.12rem;
+	height: 0.14rem;
+	position: absolute;
+	bottom: 4.28rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #EBEBEB;
+}
+.xiala1{
+	width: 6rem;
+	height: 0.1rem;
+	position: absolute;
+	bottom: 4.18rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: #EBEBEB;
+}
+.yuanyuan{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background:#23d1a6;
+	position: absolute;
+	left: 0.4rem;
+	margin: auto;
+	top: 0.34rem;
+}
+.yuanyuan1{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background:#23d1a6;
+	position: absolute;
+	left: 0.6rem;
+	margin: auto;
+	top: 0.34rem;
+}
+.yuanyuan2{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background:#23d1a6;
+	position: absolute;
+	left: 0.6rem;
+	margin: auto;
+	bottom:0.3rem;
+}
+.yuanyuan3{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background:#23d1a6;
+	position: absolute;
+	left: 0.4rem;
+	margin: auto;
+	bottom:0.3rem;
+}
+.icon-yonghuming{
+	position: absolute;
+	right: 0.42rem;
+	margin: auto;
+	top: 0.2rem;
+	color:#23d1a6;
+	font-size: 0.16rem;
+}
+.rr{
+	border-radius: 50%;
+	border: 0.02rem solid #E1E1E1;
+	top: 0.1rem;
+	right: 0.3rem;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+}
+
+
+
+.loginbox .input1{
+	border-radius: 0.4rem ;
+	 border:0.02rem solid #D9D9D9; 
+	width: 5.6rem;
+	height: 0.7rem; 
+	font-size: 0.24rem; 
+	text-align: center;
+	position:absolute;
+	top:0;
+}
+.loginbox .input2{
+	border-radius: 0.4rem ; 
+	border:0.02rem solid #D9D9D9;
+	 width: 2.6rem;
+	 height: 0.7rem;
+	 font-size: 0.24rem; 
+	text-align: center;
+	position:absolute;
+	bottom:0;
+}
+.loginbox .input3{
+	border-radius: 0.4rem ; 
+	border:0.02rem solid #D9D9D9;
+	width: 2.1rem;
+	height: 0.7rem;
+	position:absolute;
+	bottom:0;
+	right: 0.2rem;
+}
+.xiaqu{
+	width: 5.2rem;
+	height: 1rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom:3.8rem;
+	z-index: 1;
+}
+
+.xia{
+	border-radius: 0.4rem ; 
+	width: 5.2rem;
+	height:0.9rem; 
+	background: white;
+	position: relative;
+	box-shadow: 0 0 0.3rem 0.01rem rgba(0, 0, 0,0.1);
+}
+.xia input{
+	position: absolute;
+	margin: 0 auto;
+	top: 0.05rem;
+	left: 0.08rem;
+	width: 5.06rem;
+	height: 0.8rem;
+	background:white;
+	border-radius: 0.4rem;
+	border:0.02rem solid #23d1a6;
+}
+
+.xia1{
+	width: 100%;
+	height: 1.15rem;
+	margin-top:0.3rem;
+}
+.left{
+	width: 2rem;
+	height: 100%;
+	float: left;
+	position: relative;
+	margin-left: 0.2rem;
+}
+.left a{
+	font-size: 0.32rem;
+	color: black;
+	float: right;
+	text-align: center;
+	line-height: 1rem;	
+}
+.yuan{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background:#23d1a6;
+	position: absolute;
+	left: 0.2rem;
+	margin: auto;
+	top: 0rem;
+	bottom: 0rem;
+}
+.yuan1{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background: #fcc92e;
+	position: absolute;
+	left: 0.4rem;
+	margin: auto;
+	top: 0rem;
+	bottom: 0rem;
+}
+.right{
+	width: 1.2rem;
+	height: 100%;
+	float: right;
+}
+.mui-switch{
+	margin-bottom: 0.22rem;
+	width: 1.04rem;
+    height: 0.62rem;
+    position: relative;
+    border:0.02rem solid #dfdfdf;
+    background-color: #fdfdfd;
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    border-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    background-clip: content-box;
+    display: inline-block;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+}
+.mui-switch:before{
+	content: '';
+    width: 0.58rem;
+    height: 0.58rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    background-color: #fff;
+    box-shadow: 0 0.02rem 0.06rem rgba(0, 0, 0, 0.4);
+}
+.mui-switch:checked {
+    border-color: #64bd63;
+    box-shadow: #64bd63 0 0 0 0.32rem inset;
+    background-color: #64bd63;
+}
+.mui-switch:checked:before {
+    left: 0.42rem;
+}
+.loginbox .input2{
+	border-radius: 0.4rem ; 
+	border:0.02rem solid #D9D9D9;
+	 width: 5.6rem;height: 0.7rem;font-size: 0.24rem; 
+	text-align: center;
+	position:absolute;
+	bottom:0;
+}
+
+.rr1{
+	border-radius: 50%;
+	border: 0.02rem solid #E1E1E1;
+	bottom: 0.1rem;
+	right: 0.3rem;
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	background: white;
+}
+.icon-suo{
+	position: absolute;
+	right: 0.42rem;
+	margin: auto;
+	bottom: 0.2rem;
+	color:#23d1a6;
+	font-size: 0.16rem;
+}
+.yy{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#22bd60 ;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.4rem;
+	left: 0.2rem;
+	box-shadow: 0 0 0.1rem 0.02rem rgba(0, 0, 0, 0.25);
+}
+.yy1{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#22bd60 ;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.4rem;
+	right:0.2rem;
+	box-shadow: 0 0 0.1rem 0.02rem rgba(0, 0, 0, 0.25);
+}
+.listing{
+ 	font-size: 0.32rem;
+ 	text-align: center;
+ 	color: #22bc60;
+ 	font-weight: bold;
+ 	position: absolute;
+ 	margin:auto;
+ 	left: 0;
+ 	right: 0;
+ 	top: 0.25rem;
+}
+.circle{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#bce9ce ;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.46rem;
+	left: 1.4rem;
+}
+.circle1{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#7ad79f ;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.46rem;
+	left: 1.54rem;
+}
+.circle2{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#22bc60 ;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.46rem;
+	left: 1.68rem;
+}
+.circle5{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#bce9ce ;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.46rem;
+	right: 1.4rem;
+}
+.circle4{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#7ad79f ;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.46rem;
+	right: 1.54rem;
+}
+.circle3{
+	width: 0.1rem;
+	height: 0.1rem;
+	background:#22bc60 ;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.46rem;
+	right: 1.68rem;
+}

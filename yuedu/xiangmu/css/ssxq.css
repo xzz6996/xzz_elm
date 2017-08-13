@@ -1,0 +1,461 @@
+body{
+	font-family: "苹方","Helvetica","微软雅黑";
+	background: #fafafa;
+}
+header{
+	width: 100%;
+	height: 1rem;
+	border-radius: 0.2rem;
+	background: #fafafa;
+	overflow: hidden;
+	position: fixed;
+	top: 0rem;
+	left: 0;
+	z-index: 1000;
+}
+.jiantou{
+	width: 0.4rem;
+	height: 0.4rem;
+	background: #e8e8e8;
+	border-radius: 50%;
+	font-size: 0.3rem;
+	border: 0.02rem solid white;
+	color: #494949;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	line-height: 0.4rem;
+	margin-left: 0.25rem;
+	margin-top: 0.28rem;
+}
+.mid-kua{
+	width: 2.92rem;
+	height: 0.58rem;
+	background-image: url('../img/sousuo_031.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	margin-top: 0.2rem;
+	margin-left: 1.45rem;
+}
+.righ{
+	width: 0.48rem;
+	height: 0.49rem;
+	background-image: url('../img/sousuo1_14.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 0.25rem;
+	margin-right: 0.27rem;
+}
+main{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin-top: 0.21rem;
+	background: #fafafa;
+}
+.inp{
+	width: 5.89rem;
+	height: 0.56rem;
+	border: 0.02rem solid #e4e4e4;
+	background: #fff;
+	border-radius: 0.5rem;
+	margin-left: 0.25rem;
+	float: left;
+}
+.in-zi{
+	width: 1.3rem;
+	height: 0.26rem;
+	margin-top: 0.06rem;
+	margin-left: 0.2rem;
+	float: left;
+	font-size: 0.26rem;
+	color: #636363;
+}
+.quan5{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #2ee881;
+	float: left;
+	margin-top: 0.1rem;
+	margin-left: 0.07rem;
+}
+.quan6{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #eec32f;
+	float: left;
+	margin-top: 0.1rem;
+	margin-left: 0.04rem;
+}
+.inp1{
+	width: 0.95rem;
+	height: 0.56rem;
+	background: #22b87f;
+	border-radius: 0.5rem;
+	margin-left: 0.15rem;
+	float: left;
+}
+.in-yu{
+	width: 0.76rem;
+	height: 0.46rem;
+	background: #343d45;
+	border-radius: 0.5rem;
+	float: right;
+	margin-top: 0.035rem;
+	margin-right: 0.04rem;
+}
+.huatong{
+	width: 0.59rem;
+	height: 0.3rem;
+	background-image: url('../img/liaotian_76.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 0.09rem;
+	margin-left: 0.08rem;
+}
+.left-d{
+	width: 0.04rem;
+	height: 0.04rem;
+	border-radius: 50%;
+	background: white;
+	margin-top: 0.28rem;
+	margin-left: 0.08rem;
+	float: left;
+}
+.feiji{
+	width: 0.6rem;
+	height: 100%;
+	float: left;
+	/* background: pink; */
+	margin-left: 0.06rem;
+}
+.feiji-zi{
+	width: 100%;
+	height: 50%;
+	/* background: yellow; */
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+}
+.feiji-zi1{
+	width: 100%;
+	height: 50%;
+	font-size: 0.18rem;
+	color: #fff;
+	text-align: center;
+}
+.right-d{
+	width: 0.04rem;
+	height: 0.04rem;
+	border-radius: 50%;
+	background: white;
+	margin-top: 0.28rem;
+	float: right;
+	margin-right: 0.08rem;
+}
+.contain{
+	width: 7.04rem;
+	height: 3.12rem;
+	margin-top: 0.8rem;
+	float: left;
+	background: #fff;
+	margin-left: 0.22rem;
+	border-radius: 0.2rem;
+	border: 0.02rem solid #e4e6ea;
+	position: relative;
+}
+.contain1{
+	width: 7.04rem;
+	height: 3.12rem;
+	margin-top: 0.57rem;
+	float: left;
+	background: #fff;
+	margin-left: 0.22rem;
+	border-radius: 0.2rem;
+	border: 0.02rem solid #e4e6ea;
+	position: relative;
+}
+.tu-di{
+	width: 1.96rem;
+	height: 2.52rem;
+	background: #e7e5e5;
+	border-radius: 0.1rem;
+	float: left;
+	margin-left: 0.23rem;
+	margin-top: -0.31rem;
+}
+.tu-sh{
+	width: 1.9rem;
+	border-radius: 0.1rem;
+	height: 2.52rem;
+	float: left;
+	background: green;
+	margin-left: -1.96rem;
+	margin-top: -0.36rem;
+	background-image: url('../img/20.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.con-ti{
+	width: 4.5rem;
+	height: 1.81rem;
+	float: left;
+	margin-left: 0.18rem;
+	margin-top: 0.38rem;
+}
+.con-ti1{
+	width: 2.2rem;
+	height: 0.3rem;
+	font-size: 0.26rem;
+	color: #000;
+	font-weight: bold;
+}
+.con-ti2{
+	width: 3.2rem;
+	height: 0.3rem;
+	font-size: 0.18rem;
+	color: #464646;
+	margin-top: 0.1rem;
+	line-height: 0.3rem;
+}
+.xv{
+	width: 100%;
+	height: 0.05rem;
+	overflow: hidden;
+	margin-top: 0.04rem;
+}
+.d-d{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	background: #666666;
+	float: left;
+}
+.d-x{
+	width: 2rem;
+	height: 0.04rem;
+	border: 0.01rem dashed #dfdfdf;
+	float: left;
+	margin-left: 0.06rem;
+}
+.d-d1{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	background: #666666;
+	float: left;
+	margin-left: 0.06rem;
+}
+.xing{
+	width: 2.4rem;
+	height: 0.4rem;
+	margin-top: 0.25rem;
+}
+.xing ul li{
+	width: 0.3rem;
+	height: 0.3rem;
+	float: left;
+	margin-right: 0.1rem;
+	background-image: url('../img/xingxing_03_03.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.xing ul li:nth-child(5){
+	margin-right: 0;
+}
+.gu{
+	width: 0.77rem;
+	height: 0.83rem;
+	background: #22b980;
+	border-radius: 0.02rem;
+	position: absolute;
+	top: -0.06rem;
+	left: 5.88rem;
+}
+.gu1{
+	width: 0.59rem;
+	height: 0.28rem;
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.28rem;
+	margin-top: 0.19rem;
+	margin-left: 0.1rem;
+}
+.gu2{
+	width: 100%;
+	height: 0.3rem;
+	/* background: yellow; */
+	/* margin-left: 0.1rem; */
+	overflow: hidden;
+}
+.gu2-d{
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	margin-left: 0.05rem;
+	margin-top: 0.13rem;
+	float: left;
+}
+.gu2-zi{
+	width: 0.54rem;
+	height: 0.2rem;
+	float: left;
+	margin-left: 0.04rem;
+	font-size: 0.18rem;
+	font-style: oblique;
+	color: #fff;
+}
+.gu2-d1{
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	margin-right: 0.05rem;
+	margin-top: 0.13rem;
+	float: right;
+}
+.xv1{
+	width: 91%;
+	height: 0.05rem;
+	overflow: hidden;
+	margin-top: 0.26rem;
+	margin-left: 0.3rem;
+	float: left;
+}
+.d-d1{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	background: #666666;
+	float: left;
+}
+.d-x1{
+	width: 95%;
+	height: 0.04rem;
+	border: 0.01rem dashed #dfdfdf;
+	float: left;
+	margin-left: 0.06rem;
+}
+.d-d1-1{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	background: #666666;
+	float: left;
+	margin-left: 0.06rem;
+}
+.xiab{
+	width: 6.35rem;
+	height: 0.54rem;
+	float: left;
+	margin-left: 0.3rem;
+}
+.shou{
+	width: 0.29rem;
+	height: 0.29rem;
+	border-radius: 50%;
+	background: white;
+	overflow: hidden;
+	float: left;
+	margin-top: 0.13rem;
+	margin-left: 0.13rem;
+	box-shadow: 0 0 0.05rem 0.01rem #ccc;
+}
+.shou-shu{
+	width: 0.4rem;
+	height: 0.15rem;
+	font-size: 0.2rem;
+	color: #ccc;
+	float: left;
+	margin-top: 0.15rem;
+	margin-left: 0.16rem;
+}
+.gang{
+	width: 0.02rem;
+	height: 0.23rem;
+	float: left;
+	margin-top: 0.17rem;
+	margin-left: 0.87rem;
+	background: #cccccc;
+}
+.shou1{
+	width: 0.29rem;
+	height: 0.29rem;
+	border-radius: 50%;
+	background: white;
+	overflow: hidden;
+	float: left;
+	margin-top: 0.13rem;
+	margin-left: 0.84rem;
+	box-shadow: 0 0 0.05rem 0.01rem #ccc;
+}
+.shou-shu1{
+	width: 0.4rem;
+	height: 0.15rem;
+	font-size: 0.2rem;
+	color: #ccc;
+	float: left;
+	margin-top: 0.15rem;
+	margin-left: 0.16rem;
+}
+.sitou1{
+	width: 0.29rem;
+	height: 0.29rem;
+	border-radius: 50%;
+	border: 0.02rem solid #fff;
+	float: left;
+	margin-top: 0.15rem;
+	margin-left: 0.84rem;
+	background-image: url('../img/tou3.png');
+	background-size: 150% 150%;
+	background-repeat: no-repeat;
+}
+.sitou2{
+	width: 0.29rem;
+	height: 0.29rem;
+	border-radius: 50%;
+	border: 0.02rem solid #fff;
+	float: left;
+	margin-top: 0.15rem;
+	margin-left: -0.09rem;
+	background-image: url('../img/tou2.png');
+	background-size: 150% 150%;
+	background-repeat: no-repeat;
+}
+.sitou3{
+	width: 0.29rem;
+	height: 0.29rem;
+	border-radius: 50%;
+	border: 0.02rem solid #fff;
+	float: left;
+	margin-top: 0.15rem;
+	margin-left: -0.09rem;
+	background-image: url('../img/tou1.png');
+	background-size: 150% 150%;
+	background-repeat: no-repeat;
+}
+.sitou4{
+	width: 0.29rem;
+	height: 0.29rem;
+	border-radius: 50%;
+	border: 0.02rem solid #fff;
+	background: #22b980;
+	float: left;
+	margin-top: 0.15rem;
+	margin-left: -0.09rem;
+}
+.erba{
+	width: 0.16rem;
+	height: 0.16rem;
+	margin-left: 0.05rem;
+	margin-top: 0.05rem;
+	background-image: url('../img/tou4_46.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}

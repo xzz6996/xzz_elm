@@ -1,0 +1,137 @@
+.bigbox{
+	width: 100%;
+	height: 13.34rem;
+	background: #f6f6f6;
+	overflow: hidden;
+}
+.box{
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.75);
+		overflow: hidden;
+
+	}
+	.yuan{
+		width: 0.44rem;
+		height: 0.44rem;
+		background: #e5e5e5;
+		border: 0.04rem solid #fcfcfc;
+		border-radius: 0.5rem;
+		font-size: 0.16rem;
+		color: #494949;
+		line-height: 0.36rem;
+		text-align: center;
+		margin-top: 0.6rem;
+		margin-left: 0.24rem;
+	}
+	.yinghangka1{
+			width: 5.6rem;
+			height: 3rem;
+			border-radius: 0.1rem;
+			background: blue;
+			
+			margin: 0 auto;
+			margin-top: 0.5rem;
+			background-image: url('../imgs/yinghangka1.png');
+			background-size: cover;
+			overflow: hidden;
+			box-shadow: 0 0.5rem 0.5rem 0.02rem rgba(214, 214,243, 0.6);
+
+		}
+		
+			.zi1{
+				width: 100%;
+				margin-top:1.14rem; 
+			}
+				.zi1 ul{
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+				}
+				.zi1 ul li{
+					font-size: 0.24rem;
+					float: left;
+					margin-left: 0.36rem;
+					line-height: 0.36rem;
+					color: #ffffff;
+				}
+				.zi1 ul li:nth-child(4){
+					color: white;
+					font-size: 0.36rem;
+				}
+			.yinghangka1-1{
+				width: 100%;
+				margin-top: 0.5rem;
+				overflow: hidden
+				/* margin-top: 0.4rem; */
+			}
+				.zuo{
+					width: 3rem;
+					float: left;
+					margin-left: 0.36rem;
+				}
+					.yinghangka1-1 .zuo h1{
+						font-size: 0.22rem;
+						color: white;
+					}
+					 .yinghangka1-1 .zuo h2{
+						font-size: 0.24rem;
+						color: #e7f6fe;
+						margin-top: 0.16rem;
+					}
+				.you{
+					width: 2.1rem;
+					float: left;
+					/* margin-left: 0.36rem; */
+				}
+					.yinghangka1-1 .you h1{
+						font-size: 0.22rem;
+						color: white;
+					}
+					.yinghangka1-1 .you h2{
+						font-size: 0.24rem;
+						color: #e7f6fe;
+						margin-top: 0.16rem;
+					}
+
+			.bigbox h5{
+		font-size: 0.3rem;
+		text-align: center;
+		color:#5e6061;
+		margin-top: 1rem;
+	}
+	.bigbox h6{
+		font-size: 0.16rem;
+		text-align: center;
+		color: #c9c7c7;
+		margin-top: 0.26rem;
+	}
+	.bigbox h3{
+		font-size: 0.16rem;
+		text-align: center;
+		color: #c9c7c7;
+		margin-top: 0.06rem;
+	}
+	.xian{
+		width: 0.56rem;
+		height: 0.04rem;
+		border-top: 0.02rem solid #dedede;
+		border-bottom: 0.02rem solid #dedede;
+		border-left: 0.04rem solid #5e6061;
+		border-right: 0.04rem solid #5e6061;
+		margin: 0 auto;
+		margin-top: 0.16rem;
+	}
+	.mima{
+		width: 5.5rem;
+		margin-left: 1rem;
+	}
+		.mima1{
+			width: 0.5rem;
+			height: 0.5rem;
+			background: #f6f6f6;
+			margin: 0;
+			border: 0;
+			border-bottom: 0.08rem solid #a2a2a2;
+			/* margin-left: 0.5rem; */
+		}

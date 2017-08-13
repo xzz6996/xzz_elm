@@ -1,0 +1,360 @@
+.bigbox{
+	width: 7.5rem;
+	height: 13.34rem;
+	background: #f6f6f6;
+	overflow: hidden;
+
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+
+	.banna{
+		width: 100%;
+		height: 5.7rem;
+		background: blue;
+		overflow: hidden;
+		background-image: url('../imgs/bana.png');
+			background-size: cover;
+	}
+		.banna1{
+			width: 7.07rem;
+			height: 0.57rem;
+			margin: 0 auto;
+			margin-top: 0.5rem;
+			/* background: black; */
+			overflow: hidden;
+			position: relative;
+
+		}
+			.banna1-1{
+				height: 100%;
+				font-size: 0.2rem;
+				line-height: 0.57rem;
+				float: left;
+			}
+			.banna1-2{
+				width: 2.1rem;
+				height: 100%;
+				float: left;
+				font-size: 0.2rem;
+				margin-left: 0.6rem;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				color: #fff;
+				text-align: center;
+			}
+				.banna1-2 h5{
+					font-size: 0.3rem;
+					color: #353535;
+				}
+				.banna1-2 h6{
+					
+					color: #9c9c9c;
+				}
+			.banna1-3{
+				width: 0.7rem;
+				height: 0.44rem;
+				border: 0.04rem solid #ffffff;
+				border-radius: 0.5rem;
+				float: right;
+				background: #22bd83;
+				background-image: url('../imgs/jiahao1.png');
+				background-size: cover;
+				background-position: center center;
+			}
+		.banna2{
+			width: 100%;
+			margin-top: 0.06rem;
+		}
+			.banna2 ul{
+				width: 0.48rem;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+				.banna2 ul li:nth-child(1){
+					width: 0.04rem;
+					height: 0.04rem;
+					background: #4ecb8c;
+					border-radius: 0.5rem;
+					float: left;
+					margin-left: 0.04rem;
+					margin-top: 0.02rem;
+				}
+				.banna2 ul li:nth-child(2){
+					width: 0.06rem;
+					height: 0.06rem;
+					background: #4ecb8c;
+					border-radius: 0.5rem;
+					float: left;
+					margin-left: 0.04rem;
+					margin-top: 0.01rem;
+				}
+				.banna2 ul li:nth-child(3){
+					width: 0.08rem;
+					height: 0.08rem;
+					background: #fcd125;
+					border-radius: 0.5rem;
+					float: left;
+					margin-left: 0.04rem;
+				}
+				.banna2 ul li:nth-child(4){
+					width: 0.06rem;
+					height: 0.06rem;
+					background: #4ecb8c;
+					border-radius: 0.5rem;
+					float: left;
+					margin-left: 0.04rem;
+					margin-top: 0.01rem;
+				}
+				.banna2 ul li:nth-child(5){
+					width: 0.04rem;
+					height: 0.04rem;
+					background: #4ecb8c;
+					border-radius: 0.5rem;
+					float: left;
+					margin-left: 0.04rem;
+					margin-top: 0.02rem;
+				}
+		.touxiang{
+			width: 1.87rem;
+			height: 1.87rem;
+			background: black;
+			border-radius: 1rem;
+
+
+			margin: 0 auto;
+			margin-top: 0.35rem;
+			border: 0.04rem solid #fff;
+			background-image: url('../imgs/tou.png');
+			background-size: cover;
+		}
+		.name{
+			width: 100%;
+			font-size: 0.18rem;
+			text-align: center;
+			margin-top: 0.16rem;
+			color: #f4f4f4;
+		}
+		.xuxian{
+			width: 2.65rem;
+			
+			border-top: 0.02rem dashed #82817f;
+			border-right: 0.02rem dashed #ffffff;
+			border-left: 0.02rem dashed #ffffff;
+			margin:  0 auto;
+			margin-top: 0.14rem;
+		}
+	.yinghangka{
+		width: 17.4rem;
+		/* height: 3rem; */
+		/* background: black; */
+		position: absolute;
+		top: 4.6rem;
+		overflow: hidden;
+		margin-left: -5.06rem;
+	}	
+		.yinghangka2{
+			width: 5.6rem;
+			height: 2.86rem;
+			background: pink;
+			float: left;
+			border-top-right-radius: 0.1rem;
+			border-bottom-right-radius: 0.1rem;
+			margin-top: 0.07rem;
+			background-image: url('../imgs/kasadsda.png');
+			background-size: cover;
+		}
+		.yinghangka3{
+			width: 5.6rem;
+			height: 2.86rem;
+			background: pink;
+			float: right;
+			border-top-left-radius: 0.1rem;
+			border-bottom-left-radius: 0.1rem;
+			margin-top: 0.07rem;
+			background-image: url('../imgs/kasadsda.png');
+			background-size: cover;
+		}
+		.longbo{
+			width: 100%;
+			margin-top: 0.3rem;
+			float: left;
+		}
+			.longbo ul{
+				width: 0.45rem;
+				/* text-align: center; */
+				overflow: hidden;
+				margin: 0 auto;
+
+			}
+			.longbo ul li{
+				width: 0.1rem;
+				height: 0.1rem;
+				border-radius: 0.5rem;
+				background: #bfbfbf;
+				float: left;
+				margin-left: 0.05rem;
+			}
+
+		.yinghangka1{
+			width: 5.6rem;
+			height: 3rem;
+			border-radius: 0.1rem;
+			background: blue;
+			float: left;
+			margin-left: 0.3rem;
+			background-image: url('../imgs/yinghangka1.png');
+			background-size: cover;
+			overflow: hidden;
+
+		}
+		
+			.zi1{
+				width: 100%;
+				margin-top:1.14rem; 
+			}
+				.zi1 ul{
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+				}
+				.zi1 ul li{
+					font-size: 0.24rem;
+					float: left;
+					margin-left: 0.36rem;
+					line-height: 0.36rem;
+					color: #ffffff;
+				}
+				.zi1 ul li:nth-child(4){
+					color: white;
+					font-size: 0.36rem;
+				}
+			.yinghangka1-1{
+				width: 100%;
+				margin-top: 0.5rem;
+				overflow: hidden
+				/* margin-top: 0.4rem; */
+			}
+				.zuo{
+					width: 3rem;
+					float: left;
+					margin-left: 0.36rem;
+				}
+					.zuo h1{
+						font-size: 0.22rem;
+						color: white;
+					}
+					.zuo h2{
+						font-size: 0.24rem;
+						color: #e7f6fe;
+						margin-top: 0.16rem;
+					}
+				.you{
+					width: 2.1rem;
+					float: left;
+					/* margin-left: 0.36rem; */
+				}
+					.you h1{
+						font-size: 0.22rem;
+						color: white;
+					}
+					.you h2{
+						font-size: 0.24rem;
+						color: #e7f6fe;
+						margin-top: 0.16rem;
+					}
+				
+	.di{
+		width: 100%;
+		
+		margin-top: 2.9rem;
+		box-shadow: 0 -0.01rem 0.5rem 0.02rem rgba(0, 0, 0, 0.1);
+	}
+		.kahao{
+			width: 6.1rem;
+			
+			margin: 0 auto;
+			/* background: black; */
+			overflow: hidden;
+		}
+			.dian{
+				width: 0.1rem;
+				height: 0.1rem;
+				background: #1eaa4c;
+				border-radius: 0.5rem;
+				margin-top: 0.5rem;
+				float: left;
+			}
+			.kahao1{
+				width: 5.8rem;
+				height: 100%;
+				float: left;
+				overflow: hidden;
+				margin-left: 0.2rem;
+
+			}
+				.kahao1 h1 span{
+					display: inline-block;
+					width: 2.18rem;
+					font-size: 0.3rem;
+					color: #7f7f7f;
+				}
+				.kahao1 h1{
+					font-size: 0.16rem;
+					margin-top: 0.15rem;
+					color: #828282;
+					line-height: 0.3rem;
+				}
+				.kahao1 h2{
+					font-size: 0.28rem;
+					margin-top: 0.1rem;
+					color: #828282;
+				}
+				.kahaoxu{
+					width: 3.4rem;
+					border-bottom: 0.04rem dashed #acacac;
+					margin-top: 0.15rem;
+				}
+		.jiansuan{
+			width: 6.5rem;
+			height: 0.8rem;
+			margin: 0 auto;
+			margin-top: 0.3rem;
+			background: #1eaa4c;
+			border-radius: 0.5rem;
+			box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.4);
+			overflow: hidden;
+		}
+			.jiansuan1{
+				width: 2.4rem;
+				height: 0.56rem;
+				margin: 0 auto;
+				margin-top: 0.12rem;
+
+			}
+				.jiansuan1-1{
+					width: 0.64rem;
+					height: 100%;
+					float: left;
+					background-image: url('../imgs/qiangbao.png');
+					background-size: cover;
+				}
+				.jiansuan1-2{
+					/* width: 2.6rem; */
+					height: 100%;
+					float: right;
+
+				}
+					.jiansuan1-2 h1{
+						font-size: 0.24rem;
+						color: #fffefe;
+					}
+					.jiansuan1-2 h2{
+						font-size: 0.24rem;
+						color: #fffefe;
+					}		
+

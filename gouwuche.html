@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.js"></script>
+    <script src="js/gowuche.js"> </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .thumbnail img{width:150px;height: 200px;}
+        .table,tr,td,th{text-align: center;}
+        .caption {text-align: center;}
+        .btn {margin: 0 5px;}
+    </style>
+</head>
+<body ng-controller="myCtrl">
+<!--商品展示-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3" ng-repeat="v in data">
+            <div class="thumbnail">
+                <img src="{{v.img}}" alt="...">
+                <div class="caption">
+                    <h3>{{v.name}}</h3>
+                    <p>{{v.price | currency:'￥'}}</p>
+                    <p><a href="javascript:" class="btn  btn-danger" role="button" ng-click="buy(v)">加入购物车</a><a href="javascript:" class="btn btn-primary" role="button">购买</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" ng-init="isSort=true">
+    <div>
+      搜索  <input type="text" ng-model="search">
+    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>名称</th>
+            <th>数量</th>
+            <th ng-click="isSort=!isSort">价钱</th>
+            <th >总价</th>
+            <th>操作</th>
+
+        </tr>
+        <tr ng-repeat="v in car | filter:search | orderBy:'price':isSort">
+            <td>{{v.name}}</td>
+            <td ><button  class=" btn btn-info btn-sm" ng-click="jian(v)">-</button>
+                <input type="text" value="{{v.num}}" ng-model="v.num">
+                <button class=" btn btn-info btn-sm" ng-click="jia(v)">+</button>
+            </td>
+            <td>{{v.price | currency:'￥'}}</td>
+            <td>{{v.num*v.price}}</td>
+            <td>
+                <button class="button btn-info" ng-click="del($index)">删除</button>
+            </td>
+        </tr>
+        <tr>
+            <td>总量</td>
+            <td>{{totalNum()}}</td>
+            <td>总价</td>
+            <td>{{totalPrice()}}</td>
+            <td>
+                <button class="btn-info" ng-click="clear()">清空</button>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+
+<!--购物车-->
+</body>
+</html>

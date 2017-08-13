@@ -1,0 +1,21 @@
+﻿*{
+	outline:none;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none; /* 清除a标签下划线 */
+	list-style-type:none;
+}
+a{
+	color: #808080;
+	
+
+
+}
+/* body{
+	font-family:"苹"
+} */
+a:hover{
+        	color: #afdd22;
+        }
+  a{text-decoration:none} 
