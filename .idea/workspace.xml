@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9da6cab0-2059-44f6-b1aa-5e33df1ca016" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gouwuche.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/gowuche.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/canvas.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/gw.jpg" afterPath="$PROJECT_DIR$/img/gw.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -297,15 +292,15 @@
       <workItem from="1502889651066" duration="1888000" />
       <workItem from="1503889210990" duration="1980000" />
       <workItem from="1503891286157" duration="292000" />
-      <workItem from="1503908076549" duration="437000" />
+      <workItem from="1503908076549" duration="547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21111000" />
+    <option name="totallyTimeSpent" value="21221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="1" width="1370" height="743" extended-state="0" />
+    <frame x="-8" y="1" width="1370" height="743" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28091604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
