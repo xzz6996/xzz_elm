@@ -69,7 +69,7 @@
         cartControl,shopCart,food
       },
         created(){
-          this.$ajax.get("http://localhost:8080/api/goods").then(res=>{
+          this.$ajax.get("https://xzz6996.github.io/api/goods").then(res=>{
               if(res.data.errno==ERR_OK){
                 this.goods=res.data.data;
                 this.$nextTick(()=>{

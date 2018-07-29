@@ -89,7 +89,7 @@
       }
     },
     created(){
-      this.$ajax.get('http://localhost:8080/api/ratings').then((res)=>{
+      this.$ajax.get('https://xzz6996.github.io/api/ratings').then((res)=>{
         if(res.data.errno===ERRNO){
           this.ratings=res.data.data;
            this.$nextTick(()=>{

@@ -44,7 +44,7 @@
 //          this.seller = Object.assign({}, this.seller, response.data);
 //        }
 //      });
-      this.$ajax.get("http://localhost:8080/api/seller").then(res=>{
+      this.$ajax.get("https://xzz6996.github.io/api/seller").then(res=>{
         if(res.data.errno==ERR_OK){
           this.seller = res.data.data;
         }
