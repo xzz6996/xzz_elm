@@ -1,16 +1,38 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <input type="text" v-model="myVal" v-focus> {{myValue}}
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'HelloWorld',
+  directives: {
+    focus: {
+      inserted(el){
+        el.focus();
+      }
+    }
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      myVal:''
     }
+  },
+  computed: {
+    myValue () {
+      //return this.myVal
+      return store.state.myVal
+    }
+  },
+  watch: {
+    myVal (x,y) {
+      console.log(x,y)
+    }
+  },
+  methods: {
   }
 }
 </script>
