@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<body>
+vue 单页面
+1 路由按需加载、热加载
+2 vuex 对共享变量进行统一管理，解决多层组件传数据.
+3 封装axios 对请求的接口进行统一管理，并减少代码量
+
+
+关于vuex
+vuex状态管理器，把所有共享的变量放在一起，就是一个仓库。可以对仓库里的变量进行 读取 修改 引入。
+
+资源加载过程
+
+url解析 --> dns查询 --> 资源请求 --> 浏览器解析
+
+url解析
+http://www.baidu.com:80/getdata?productid=2#title
+http 协议  www.baidu.com 域名+路径   getdata路径 productid参数  #title哈希
+
+dns查询
+浏览器www.baidu.com  -->  (dns缓存)+dns服务器 --> 97.65.113.211-->浏览器
+
+资源请求
+浏览器  request-header+参数(url+body)  -->    后端服务器 -->status+response-header+body 浏览器
+
+浏览器解析
+dom树构建（js先执行）--> 构建渲染树 --> 布局 --> 绘制
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+  //1 变量提升
+  //javascript 函数定义有个特点,它会先扫描整个函数体,把所有声明的变量提升到函数顶部
+  function f() {
+    var x='xxx'+y;
+    console.log(x);//xxxundefind
+    var y='yyyyyyy';
+  } f();
+
+  //2 解构赋值
+  var [x,y,z]=['xx','yy','zz']// x=['xx']
+
+  // apply()第一个参数就是需要绑定的this变量，第二个参数是Array，表示函数本身的参数。
+  function getAge() {
+    var y = new Date().getFullYear();
+    return y - this.birth;
+  }
+
+  var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: getAge
+  };
+
+  xiaoming.age(); // 25
+  getAge.apply(xiaoming, []); // 25, this指向xiaoming, 参数为空
+
+  // call
+
+  Math.max.apply(null, [3, 5, 4]); // 5  第二个参数是array
+  Math.max.call(null, 3, 5, 4); // 5     第二个参数是顺序
+
+
+
+</script>
+</html>

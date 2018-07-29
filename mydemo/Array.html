@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+Array 属性 
+    1 length
+    2 Array.prototype(通过数组的原型对象可以为所以数组对象添加属性)
+
+      实例
+      if(!Array.prototype.first()){
+           Array.prototype.first()=function(){
+               console.log('如果javascript本身不提供first()方法,添加一个返回数组的第一个新方法');
+           } 
+      }
+    
+      描述
+      Array的实例继承都来源于Array.prototype。与所有构造函数一样，您可以通过更改构造函数的原型对象，以对所有Array实例进行修改。
+
+      Array.isArray(Array.prototype);  true    //Array.prototype 本身就是一个Array
+
+      Array.prototype 
+        属性 Array.prototype.constructor      
+           所有数组实例都继承这个属性,它的值就是Array,表明所有的数组都是由Array构造出来的。     
+            Array.prototype.length
+
+     方法
+        会改变自身的方法
+             Array.prototype.pop() 删除数组的最后一个元素，并返回这个元素
+             Array.prototypr.push()   在数组的末尾添加一个或者多元素，并返回数组的新长度
+             Array.prototype.reverse() 颠倒数组的位置
+             Array.prototype.shift() 删除数组的第一个元素，并返回这个元素
+             Array.prototype.sort() 数组排序，并返回当前数组
+             Array.prototype.splice() 对数组进行 增删改
+             Array.prototype.unshift() 在数组的开头添加一个或者多个元素，并返回数组的新长度
+        不会改变自身的方法   
+            Array.prototype.concat() 合并多个数组,返回新数组
+            Array.prototype.includes() 判断数组中含有某个元素，返回true/false
+            Array.prototype.join() 连接所有数组元素组成一个字符串
+            Array.prototype.sclie() 抽取一段元素组成新数组
+            Array.protytype.indexOf() 返回数组中的第一个与指定值相等的索引值，如果找不对返回-1
+     
+     
+
+
+</body>
+<script>
+    遍历
+     var arr=['a','b','c'];
+     arr.forEach(function(item,index){
+           console.log(item,index)
+     })
+    
+    function aa(item){ return item>5}      //every 判断所有元素是否符合条件,true/false
+    console.log(arr.every(aa)) 
+    //some 判断某些元素是否符合条件 true/false
+
+    var sum=0;
+  //1 concat() 合并多个数组 arr1.concat(arr2,arr3,....)
+  //2 copyWithin() arr1.copyWithin(2,0)  从数组的指定位置拷贝元素到数组的另一个指定位置中。
+  //3 every() 数组中的所有元素是否符合条件, 全部满足true,否则 false
+  // arr.every(function(){},thisVal)
+  var arr=[15,20,2,30];
+  var arr1=arr.every(function (item) {
+    return item>2;
+  })
+  console.log(arr1); //false
+
+  //4 fill() 方法用于将一个固定值替换数组的元素。
+  //5 filter()创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。
+  // arr.filter(function(){},thisVal)
+  var arr2=arr.filter(function (val) {
+    return val>2;
+  })
+  console.log(arr2);//15,20,30
+  //6 find 方法返回通过测试（函数内判断）的数组的第一个元素的值。
+  // arr.find(function(){},thisVal)
+
+  //7 forEach() 方法用于调用数组的每个元素，并将元素传递给回调函数。
+  arr.forEach(function (item,index) {
+    sum+=item;
+    console.log(sum);
+  })
+  console.log(sum);
+// 8 includes() 方法用来判断一个数组是否包含一个指定的值，如果是返回 true，否则false。
+  //9 indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置
+  //10  join() 方法用于把数组中的所有元素转换一个字符串。
+  var strings=arr.join();//15 20 2 30
+
+  //11 map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。
+  var arr3=arr.map(function (item) {
+    return item*10;
+  })
+  console.log(arr3);//150,200,20,300
+
+  // 12 splice() 方法用于插入、删除或替换数组的元素。
+   var arr4=arr.splice(2,2);//15,20,2   2个参数表示删除第3个元素后面的2位
+
+  var arr6=arr.splice(2,1,'333') // 15,20,333,30
+  // 3个参数表示 替换 第3个元素，并添加1位或者多位
+
+
+
+  //13 slice() 方法可从已有的数组中返回选定的元素。
+  var arr5=arr.slice(0,2)//15,20,2
+
+  var arr8=['a','b','c'];
+  var s=new Set(['a','b','c']);
+  var m=new Map([[1,'x'],[2,'y'],[3,'z']]);
+  for (var x of arr8){
+    console.log(x) //a,b,c
+  }
+  for(var x of s){
+    console.log(x) //a,b,c
+  }
+  for(var x of m){
+    console.log(x) //[1,'x'],[2,'y'],[3,'z']
+  }
+
+</script>
+</html>

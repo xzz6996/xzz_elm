@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+qs是npm仓库所管理的包，可通过npm i qs安装
+
+qs.parse() 将url解析成对象的形式
+
+const QS=require('qs');
+let url="method=query_sql_dataset_data&projectId=85&appToken=7d22e38e-5717-11e7-907b-a6006ad3dba0";
+QS.parse(url);//{method:"query_sql_dataset_data",proheceId:"85",appToken:"7d22e38e-5717-11e7-907b-a6006ad3dba0"}
+
+
+qs.stringify() 将对象 序列化成URL的形式，以&进行拼接
+let data={method:"query_sql_dataset_data",proheceId:"85",appToken:"7d22e38e-5717-11e7-907b-a6006ad3dba0"};
+QS.stringify(data);//method=query_sql_dataset_data&projectId=85&appToken=7d22e38e-5717-11e7-907b-a6006ad3dba0
+
+
+
+
+在这里需要注意的是，JSON中同样存在stringify方法，但是两者之间的区别是很明显的，如下所示：
+
+1 JSON.stringify(param)  {"uid":"cs11","pwd":"000000als","username":"cs11","password":"000000als"}
+2 Qs.stringify(param) uid=cs11&pwd=000000als&username=cs11&password=000000als
+
+
+如上所示，前者是采用JSON.stringify(param)进行处理，后者是采用Qs.stringify(param)进行处理的。
+
+</body>
+</html>
